@@ -1,4 +1,4 @@
-Readme for ReproZip: DASPOS Workshop
+Readme for ReproZip Use Case: DASPOS Workshop
 
 This is a repo for Breakout 2 ReproZip a session held at the DASPOS Workshop on Container Strategies for Data & Software Preservation.  More information about the workshop is available at: https://daspos.crc.nd.edu/index.php/workshops/container-strategies-for-data-software-preservation-that-promote-open-science
 
