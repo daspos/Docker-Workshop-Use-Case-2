@@ -15,14 +15,13 @@ To start with, download this repo
 
 1. Install the VirtualBox VM Manager, using this package:
 
-
 ...http://download.virtualbox.org/virtualbox/5.0.20/VirtualBox-5.0.20-106931-OSX.dmg
 
 2. Install Docker and boot2docker via brew
 
-... *brew install docker*
-... *brew install boot2docker*
+  *brew install docker*
 
+  *brew install boot2docker*
 
 ##Running ReproUnzip##
 
@@ -31,19 +30,22 @@ check the version by typing *python --version*
 
 1. Install reprounzip and reprounzip-docker
 
-... *sudo pip install reprounzip* 
-... sudo pip install reprounzip-docker
+ *sudo pip install reprounzip* 
+
+ sudo pip install reprounzip-docker
 
 2. Get Docker Running
 
-..._boot2docker init_   ( This will download a boot2docker image ISO- could take a minute or two)
-...*boot2docker up*     ( The initial iamge startup could take several minutes)
-...*eval "$(boot2docker shellinit)"*  (gets docker talking to vitrualbox via boot2docker)
+ *boot2docker init*   ( This will download a boot2docker image ISO- could take a minute or two)
+
+ *boot2docker up*     ( The initial iamge startup could take several minutes)
+
+ *eval "$(boot2docker shellinit)"*  (gets docker talking to vitrualbox via boot2docker)
 
 3. Running ReproUnzip (and Bertini)
 
-...We are ready tp try and reproduce the Bertini run we captured 
-..1. first, find the packed ReproZip file bertini\_example1.rpz in the directory Docker-Workshop-Use-Case-2/reprozip\_bertini\_osx
+ We are ready tp try and reproduce the Bertini run we captured
+ 1. first, find the packed ReproZip file bertini\_example1.rpz in the directory Docker-Workshop-Use-Case-2/reprozip\_bertini\_osx
 ..2. setup reprounzip for a run with the command *reprounzip docker setup bertini\_example1.rpz example1\_homedir* - this will create the directory example1\_homedir, and will likely take a few minutes.
 ..3. Now, run the unpacked example: *reprounzip docker run example\_homedir*   The full output is availble in the example1.out file 
 ..4. The command *reprounzip docker download example1\_homedir * will show all of the Bertini Result files which are available for download
