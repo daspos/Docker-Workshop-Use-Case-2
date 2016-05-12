@@ -1,0 +1,183 @@
+Script started on Thu May 12 15:07:42 2016
+sh-3.2$ pwd
+/Users/msuhovec/repos/Docker-Workshop-Use-Case-2/reprozip_bertini_osx
+sh-3.2$ boot2docker up
+
+  WARNING: The 'boot2docker' command line interface (not to be confused with
+  'boot2docker' the operating system) is officially deprecated.
+
+  Please switch to Docker Machine (https://docs.docker.com/machine/) ASAP.
+
+  Docker Toolbox (https://docker.com/toolbox) is the recommended install method.
+
+Waiting for VM and Docker daemon to start...
+.o
+Started.
+Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/ca.pem
+Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/cert.pem
+Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/key.pem
+
+To connect the Docker client to the Docker daemon, please set:
+    export DOCKER_HOST=tcp://192.168.59.103:2376
+    export DOCKER_CERT_PATH=/Users/msuhovec/.boot2docker/certs/boot2docker-vm
+    export DOCKER_TLS_VERIFY=1
+
+Or run: `eval "$(boot2docker shellinit)"`
+
+sh-3.2$ eval "$(boot2docker shellinit)"
+Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/ca.pem
+Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/cert.pem
+Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/key.pem
+sh-3.2$ reprounzip docker setup bertini_example1.rpz example1_dir
+/Library/Python/2.7/site-packages/requests/packages/urllib3/util/ssl_.py:318: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#snimissingwarning.
+  SNIMissingWarning
+/Library/Python/2.7/site-packages/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+[REPROUNZIP] 15:12:10.049 WARNING: Unsupported distribution 'centos linux', using debian
+/Library/Python/2.7/site-packages/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+/Library/Python/2.7/site-packages/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+/Library/Python/2.7/site-packages/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+Sending build context to Docker daemon 557.1 kBSending build context to Docker daemon 1.114 MBSending build context to Docker daemon 1.671 MBSending build context to Docker daemon 2.228 MBSending build context to Docker daemon 2.785 MBSending build context to Docker daemon 3.342 MBSending build context to Docker daemon 3.899 MBSending build context to Docker daemon 4.278 MB
+Step 1 : FROM debian:jessie
+ ---> bb5d89f9b6cb
+Step 2 : COPY busybox /busybox
+ ---> Using cache
+ ---> 4eab7b2106ca
+Step 3 : COPY rpzsudo /rpzsudo
+ ---> Using cache
+ ---> 7727ed66ee51
+Step 4 : COPY data.tgz /reprozip_data.tgz
+ ---> 501b656fad70
+Removing intermediate container f33761d9d8cb
+Step 5 : COPY rpz-files.list /rpz-files.list
+ ---> ab43dc8b3f0b
+Removing intermediate container dd7a7bdba337
+Step 6 : RUN chmod +x /busybox /rpzsudo &&     cd / && (tar zpxf /reprozip_data.tgz -U --recursive-unlink --numeric-owner --strip=1 --null -T /rpz-files.list || /busybox echo "TAR reports errors, this might or might not prevent the execution to run")
+ ---> Running in 2cf5e386035f
+ ---> 385393aaca64
+Removing intermediate container 2cf5e386035f
+Successfully built 385393aaca64
+
+Uploading usage statistics is currently disabled
+Please help us by providing anonymous usage statistics; you can enable this
+by running:
+    reprounzip usage_report --enable
+If you do not want to see this message again, you can run:
+    reprounzip usage_report --disable
+Nothing will be uploaded before you opt in.
+sh-3.2$ reprounzip docker setup bertini_example1.rpz example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1Pexample1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dirr example1_diru example1_dirn example1_dir
+
+   Bertini(TM) v1.5
+  (February 11, 2015)
+
+ D.J. Bates, J.D. Hauenstein,
+ A.J. Sommese, C.W. Wampler
+
+(using GMP v5.0.5, MPFR v3.1.1)
+
+
+
+NOTE: You have requested to use adaptive path tracking.  Please make sure that you have
+setup the following tolerances appropriately:
+CoeffBound: 1.916740000000e+00, DegreeBound: 2.000000000000e+00
+AMPSafetyDigits1: 1, AMPSafetyDigits2: 1, AMPMaxPrec: 1024
+
+Tracking path 0 of 4
+
+Finite Solution Summary
+
+NOTE: nonsingular vs singular is based on condition number and identical endpoints
+
+		| Number of real solns	|  Number of non-real solns	|  Total
+------------------------------------------------------------------------------------------
+Non-singular	|	2		|		0		|   2
+Singular	|	0		|		0		|   0
+------------------------------------------------------------------------------------------
+Total		|	2		|		0		|   2
+
+
+Finite Multiplicity Summary
+
+  Multiplicity	|  Number of real solns	|  Number of non-real solns
+------------------------------------------------------------------------------------------
+	1	|	2		|	0
+
+
+------------------------------------------------------------------------------------------
+The following files may be of interest to you:
+
+main_data:             A human-readable version of the solutions - main output file.
+raw_solutions:         A list of the solutions with the corresponding path numbers.
+raw_data:              Similar to the previous, but with the points in Bertini's homogeneous
+                         coordinates along with more information about the solutions.
+real_finite_solutions: A list of all real finite solutions.
+finite_solutions:      A list of all finite solutions.
+nonsingular_solutions: A list of all nonsingular solutions.
+singular_solutions:    A list of all singular solutions.
+------------------------------------------------------------------------------------------
+
+Paths Tracked: 4
+ Truncated infinite paths: 2 - try adjusting SecurityMaxNorm or set SecurityLevel to 1 in the input file
+   Please see 'failed_paths' for more information about these paths.
+
+
+*** Command finished, status: 0
+sha256:93456b4284b25b24136509880ee954ac3e611cd786ce09977d43b4f1bac7cc78
+reprounzip_run_ll2x65nhwq
+
+Uploading usage statistics is currently disabled
+Please help us by providing anonymous usage statistics; you can enable this
+by running:
+    reprounzip usage_report --enable
+If you do not want to see this message again, you can run:
+    reprounzip usage_report --disable
+Nothing will be uploaded before you opt in.
+sh-3.2$ reprounzip docker run example1_dir
+Output files:
+    nonsingular_solutions
+    raw_data
+    midpath_data
+    main_data
+    real_finite_solutions
+    start
+    finite_solutions
+    output
+    raw_solutions
+    singular_solutions
+    failed_paths
+
+Uploading usage statistics is currently disabled
+Please help us by providing anonymous usage statistics; you can enable this
+by running:
+    reprounzip usage_report --enable
+If you do not want to see this message again, you can run:
+    reprounzip usage_report --disable
+Nothing will be uploaded before you opt in.
+sh-3.2$ reprounzip docker download example1_dir
+Output files:
+    nonsingular_solutions
+    raw_data
+    midpath_data
+    main_data
+    real_finite_solutions
+    start
+    finite_solutions
+    output
+    raw_solutions
+    singular_solutions
+    failed_paths
+
+Uploading usage statistics is currently disabled
+Please help us by providing anonymous usage statistics; you can enable this
+by running:
+    reprounzip usage_report --enable
+If you do not want to see this message again, you can run:
+    reprounzip usage_report --disable
+Nothing will be uploaded before you opt in.
+sh-3.2$ exit
+exit
+
+Script done on Thu May 12 15:16:22 2016
