@@ -5,6 +5,7 @@ This example includes a ReproZip Package created on a Mac OS X machine using a L
 [Virtual Box](https://www.virtualbox.org/wiki/VirtualBox). It assumes you are comfortable using the command line,
 [git](https://git-scm.com/), and installing packages using [homebrew](http://brew.sh/)
 
+The software used in the example is the Bertini package http://bertini.nd.edu/
 
 To start with, download this repo
 

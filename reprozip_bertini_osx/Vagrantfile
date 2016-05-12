@@ -1,7 +1,6 @@
 #
 # Vagrantfile for a CentOS Linux Box with Reprozip and Bertini
 #
-#
 Vagrant.configure(2) do |config|
   
   config.vm.box = "bento/centos-7.1"

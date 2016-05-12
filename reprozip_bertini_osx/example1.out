@@ -11,7 +11,7 @@ sh-3.2$ boot2docker up
   Docker Toolbox (https://docker.com/toolbox) is the recommended install method.
 
 Waiting for VM and Docker daemon to start...
-.o
+  
 Started.
 Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/ca.pem
 Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/cert.pem
@@ -28,6 +28,7 @@ sh-3.2$ eval "$(boot2docker shellinit)"
 Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/ca.pem
 Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/cert.pem
 Writing /Users/msuhovec/.boot2docker/certs/boot2docker-vm/key.pem
+
 sh-3.2$ reprounzip docker setup bertini_example1.rpz example1_dir
 /Library/Python/2.7/site-packages/requests/packages/urllib3/util/ssl_.py:318: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.org/en/latest/security.html#snimissingwarning.
   SNIMissingWarning
@@ -68,7 +69,8 @@ by running:
 If you do not want to see this message again, you can run:
     reprounzip usage_report --disable
 Nothing will be uploaded before you opt in.
-sh-3.2$ reprounzip docker setup bertini_example1.rpz example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1Pexample1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dir[1P example1_dirr example1_diru example1_dirn example1_dir
+
+sh-3.2$ reprounzip docker setup bertini_example1.rpz example1_dir
 
    Bertini(TM) v1.5
   (February 11, 2015)
@@ -135,6 +137,7 @@ by running:
 If you do not want to see this message again, you can run:
     reprounzip usage_report --disable
 Nothing will be uploaded before you opt in.
+
 sh-3.2$ reprounzip docker run example1_dir
 Output files:
     nonsingular_solutions
@@ -156,6 +159,7 @@ by running:
 If you do not want to see this message again, you can run:
     reprounzip usage_report --disable
 Nothing will be uploaded before you opt in.
+
 sh-3.2$ reprounzip docker download example1_dir
 Output files:
     nonsingular_solutions
@@ -177,7 +181,5 @@ by running:
 If you do not want to see this message again, you can run:
     reprounzip usage_report --disable
 Nothing will be uploaded before you opt in.
-sh-3.2$ exit
-exit
 
 Script done on Thu May 12 15:16:22 2016
