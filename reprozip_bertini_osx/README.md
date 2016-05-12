@@ -15,7 +15,7 @@ To start with, download this repo
 
 1. Install the VirtualBox VM Manager, using this package:
 
-...http://download.virtualbox.org/virtualbox/5.0.20/VirtualBox-5.0.20-106931-OSX.dmg
+ http://download.virtualbox.org/virtualbox/5.0.20/VirtualBox-5.0.20-106931-OSX.dmg
 
 2. Install Docker and boot2docker via brew
 
@@ -46,9 +46,9 @@ check the version by typing *python --version*
 
  We are ready tp try and reproduce the Bertini run we captured
  1. first, find the packed ReproZip file bertini\_example1.rpz in the directory Docker-Workshop-Use-Case-2/reprozip\_bertini\_osx
-..2. setup reprounzip for a run with the command *reprounzip docker setup bertini\_example1.rpz example1\_homedir* - this will create the directory example1\_homedir, and will likely take a few minutes.
-..3. Now, run the unpacked example: *reprounzip docker run example\_homedir*   The full output is availble in the example1.out file 
-..4. The command *reprounzip docker download example1\_homedir * will show all of the Bertini Result files which are available for download
+ 2. setup reprounzip for a run with the command *reprounzip docker setup bertini\_example1.rpz example1\_homedir* - this will create the directory example1\_homedir, and will likely take a few minutes.
+ 3. Now, run the unpacked example: *reprounzip docker run example\_homedir*   The full output is availble in the example1.out file 
+ 4. The command *reprounzip docker download example1\_homedir * will show all of the Bertini Result files which are available for download
 Output files:
     nonsingular_solutions
     raw_data
@@ -62,6 +62,6 @@ Output files:
     singular_solutions
     failed_paths
 
-#.#Using ReproZip within a VM#
+#Using ReproZip within a VM#
  
 
