@@ -53,6 +53,7 @@ check the version by typing *python --version*
  2. Setup reprounzip for a run with the command `reprounzip docker setup bertini_example1.rpz example1_homedir` - this will create the directory `example1_homedir`, and will likely take a few minutes.
  3. Now, run the unpacked example: `reprounzip docker run example_homedir`   The full output is availble in the `example1.out` file
  4. The command `reprounzip docker download example1_homedir` will show all of the Bertini Result files which are available for download
+```
 Output files:
   - nonsingular_solutions
   - raw_data
@@ -65,6 +66,7 @@ Output files:
   - raw_solutions
   - singular_solutions
   - failed_paths
+```
 
 # Using ReproZip within a VM
 
@@ -75,4 +77,4 @@ version from here:
 
  https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.dmg
 
-There is a file in the `reprozip_bertini_example` directory named -Vagrantfile-
+There is a file in the `reprozip_bertini_example` directory named *Vagrantfile*
