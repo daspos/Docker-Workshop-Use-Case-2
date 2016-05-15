@@ -70,11 +70,26 @@ Output files:
 
 # Using ReproZip within a VM
 
-If you made it this far, and would like to try your hand at creating a ReproZip rpz, you'll need a Linux VM where
+ If you made it this far, and would like to try your hand at creating a ReproZip rpz, you'll need a Linux VM where
 you can install your software and reprozip, then build the rpz. You should already have VirtualBox installed on your
 Mac for running such a VM . There is a tool, Vagrant, which helps with  building and installing VMs. Install the Mac
 version from here: 
 
  https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.dmg
 
-There is a file in the `reprozip_bertini_example` directory named *Vagrantfile*
+ There is a file in the `reprozip_bertini_example` directory named *Vagrantfile*. Copy this file to the directory on your Mac from which you'll be working, then *cd* to that directory, and run the command
+
+```
+vagrant up
+```
+ Vagrant will attempt to use this file to build and provision a centos7 linux VM, and install the Bertini Software, using VirtualBox as the VM Host. If you've never run an Centos7 image on your Mac before, Vagrant will need to downlaod the image, whivh could take 10+ minutes over a wireless connection. Vagrant will generate a large amount of output as it progresses through this process. The output capture from our testing run in included in the `vagrantup.out` file
+
+ When the ``vagrant up`` command finishes, there should be a VM running, with the Bertini software installed, that you can use
+to create an rpz. Verify this with the command
+
+```
+$ vagrant status
+Current machine states:
+
+default                   running (virtualbox)
+```

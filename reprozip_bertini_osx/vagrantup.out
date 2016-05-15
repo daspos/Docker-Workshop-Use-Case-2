@@ -1,0 +1,2181 @@
+Script started on Sun May 15 15:29:21 2016
+[?1034hsh-3.2$ vgrant[K[K[K[K[Kagrant up
+[0mBringing machine 'default' up with 'virtualbox' provider...[0m
+[1m==> default: Importing base box 'centos/7'...[0m
+[0m[K[0m[0mProgress: 10%[0m[0m[K[0m[0mProgress: 20%[0m[0m[K[0m[0mProgress: 30%[0m[0m[K[0m[0mProgress: 40%[0m[0m[K[0m[0mProgress: 70%[0m[0m[K[0m[0mProgress: 90%[0m[0m[K[0m[1m==> default: Matching MAC address for NAT networking...[0m
+[1m==> default: Setting the name of the VM: bertini-reprozip[0m
+[1m==> default: Clearing any previously set network interfaces...[0m
+[1m==> default: Preparing network interfaces based on configuration...[0m
+[0m    default: Adapter 1: nat[0m
+[1m==> default: Forwarding ports...[0m
+[0m    default: 22 => 2222 (adapter 1)[0m
+[1m==> default: Running 'pre-boot' VM customizations...[0m
+[1m==> default: Booting VM...[0m
+[1m==> default: Waiting for machine to boot. This may take a few minutes...[0m
+[0m    default: SSH address: 127.0.0.1:2222[0m
+[0m    default: SSH username: vagrant[0m
+[0m    default: SSH auth method: private key[0m
+[0m    default: Warning: Connection timeout. Retrying...[0m
+[0m    default: Warning: Remote connection disconnect. Retrying...[0m
+[0m    default: 
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.[0m
+[0m    default: 
+    default: Inserting generated public key within guest...[0m
+[0m    default: Removing insecure key from the guest if it's present...[0m
+[0m    default: Key inserted! Disconnecting and reconnecting using new SSH key...[0m
+[1m==> default: Machine booted and ready![0m
+[1m==> default: Checking for guest additions in VM...[0m
+[0m    default: No guest additions were detected on the base box for this VM! Guest
+    default: additions are required for forwarded ports, shared folders, host only
+    default: networking, and more. If SSH fails on this machine, please install
+    default: the guest additions and repackage the box to continue.
+    default: 
+    default: This is not an error message; everything may continue to work properly,
+    default: in which case you may ignore this message.[0m
+[1m==> default: Setting hostname...[0m
+[1m==> default: Rsyncing folder: /Users/msuhovec/repos/Docker-Workshop-Use-Case-2/reprozip_bertini_osx/ => /home/vagrant/sync[0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: Loaded plugins: fastestmirror[0m
+[1;32m==> default: Determining fastest mirrors[0m
+[1;32m==> default:  * base: mirror.sanctuaryhost.com
+==> default:  * extras: centos.mirrors.wvstateu.edu
+==> default:  * updates: mirror.steadfast.net[0m
+[1;32m==> default: Resolving Dependencies
+==> default: --> Running transaction check
+==> default: ---> Package epel-release.noarch 0:7-6 will be installed[0m
+[1;32m==> default: --> Finished Dependency Resolution[0m
+[1;32m==> default: 
+==> default: Dependencies Resolved
+==> default: 
+==> default: ================================================================================
+==> default:  Package                Arch             Version         Repository        Size
+==> default: ================================================================================
+==> default: Installing:
+==> default:  epel-release           noarch           7-6             extras            14 k
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Install  1 Package
+==> default: 
+==> default: Total download size: 14 k
+==> default: Installed size: 24 k
+==> default: Downloading packages:[0m
+[1;32m==> default: Public key for epel-release-7-6.noarch.rpm is not installed[0m
+[1;31m==> default: warning: /var/cache/yum/x86_64/7/extras/packages/epel-release-7-6.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY[0m
+[1;32m==> default: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7[0m
+[1;31m==> default: Importing GPG key 0xF4A80EB5:
+==> default:  Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+==> default:  Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+==> default:  Package    : centos-release-7-2.1511.el7.centos.2.10.x86_64 (@anaconda)
+==> default:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7[0m
+[1;32m==> default: Running transaction check
+==> default: Running transaction test[0m
+[1;32m==> default: Transaction test succeeded
+==> default: Running transaction[0m
+[1;32m==> default:   Installing : epel-release-7-6.noarch                                      1/1[0m
+[1;32m==> default:  
+==> default:   Verifying  : epel-release-7-6.noarch                                      1/1[0m
+[1;32m==> default:  
+==> default: 
+==> default: Installed:
+==> default:   epel-release.noarch 0:7-6                                                     
+==> default: 
+==> default: Complete![0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: Loaded plugins: fastestmirror[0m
+[1;32m==> default: Loading mirror speeds from cached hostfile[0m
+[1;32m==> default:  * base: mirror.sanctuaryhost.com[0m
+[1;32m==> default:  * epel: mirror.steadfast.net[0m
+[1;32m==> default:  * extras: centos.mirrors.wvstateu.edu[0m
+[1;32m==> default:  * updates: mirror.steadfast.net[0m
+[1;32m==> default: Resolving Dependencies[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package patch.x86_64 0:2.7.1-8.el7 will be installed[0m
+[1;32m==> default: --> Finished Dependency Resolution[0m
+[1;32m==> default: 
+==> default: Dependencies Resolved[0m
+[1;32m==> default: 
+==> default: ================================================================================
+==> default:  Package         Arch             Version                  Repository      Size
+==> default: ================================================================================
+==> default: Installing:
+==> default:  patch           x86_64           2.7.1-8.el7              base           110 k
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Install  1 Package[0m
+[1;32m==> default: Total download size: 110 k[0m
+[1;32m==> default: Installed size: 210 k[0m
+[1;32m==> default: Downloading packages:[0m
+[1;32m==> default: Running transaction check[0m
+[1;32m==> default: Running transaction test[0m
+[1;32m==> default: Transaction test succeeded[0m
+[1;32m==> default: Running transaction[0m
+[1;32m==> default:   Installing : patch-2.7.1-8.el7.x86_64                                     1/1[0m
+[1;32m==> default:  
+==> default:   Verifying  : patch-2.7.1-8.el7.x86_64                                     1/1[0m
+[1;32m==> default:  
+==> default: 
+==> default: Installed:
+==> default:   patch.x86_64 0:2.7.1-8.el7                                                    [0m
+[1;32m==> default: Complete![0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: Loaded plugins: fastestmirror[0m
+[1;32m==> default: Loading mirror speeds from cached hostfile[0m
+[1;32m==> default:  * base: mirror.sanctuaryhost.com[0m
+[1;32m==> default:  * epel: mirror.steadfast.net[0m
+[1;32m==> default:  * extras: centos.mirrors.wvstateu.edu[0m
+[1;32m==> default:  * updates: mirror.steadfast.net[0m
+[1;32m==> default: Resolving Dependencies[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package wget.x86_64 0:1.14-10.el7_0.1 will be installed[0m
+[1;32m==> default: --> Finished Dependency Resolution[0m
+[1;32m==> default: 
+==> default: Dependencies Resolved[0m
+[1;32m==> default: 
+==> default: ================================================================================
+==> default:  Package        Arch             Version                   Repository      Size
+==> default: ================================================================================
+==> default: Installing:
+==> default:  wget           x86_64           1.14-10.el7_0.1           base           545 k
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Install  1 Package[0m
+[1;32m==> default: Total download size: 545 k
+==> default: Installed size: 2.0 M[0m
+[1;32m==> default: Downloading packages:[0m
+[1;32m==> default: Running transaction check[0m
+[1;32m==> default: Running transaction test[0m
+[1;32m==> default: Transaction test succeeded[0m
+[1;32m==> default: Running transaction[0m
+[1;32m==> default:   Installing : wget-1.14-10.el7_0.1.x86_64                                  1/1[0m
+[1;32m==> default:  
+==> default:   Verifying  : wget-1.14-10.el7_0.1.x86_64                                  1/1[0m
+[1;32m==> default:  
+==> default: 
+==> default: Installed:
+==> default:   wget.x86_64 0:1.14-10.el7_0.1                                                 [0m
+[1;32m==> default: Complete![0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: Loaded plugins: fastestmirror[0m
+[1;32m==> default: Loading mirror speeds from cached hostfile[0m
+[1;32m==> default:  * base: mirror.sanctuaryhost.com[0m
+[1;32m==> default:  * epel: mirror.steadfast.net[0m
+[1;32m==> default:  * extras: centos.mirrors.wvstateu.edu[0m
+[1;32m==> default:  * updates: mirror.steadfast.net[0m
+[1;32m==> default: Resolving Dependencies
+==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package gcc.x86_64 0:4.8.5-4.el7 will be installed[0m
+[1;32m==> default: --> Processing Dependency: cpp = 4.8.5-4.el7 for package: gcc-4.8.5-4.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: glibc-devel >= 2.2.90-12 for package: gcc-4.8.5-4.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-4.8.5-4.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-4.8.5-4.el7.x86_64[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package cpp.x86_64 0:4.8.5-4.el7 will be installed[0m
+[1;32m==> default: ---> Package glibc-devel.x86_64 0:2.17-106.el7_2.6 will be installed[0m
+[1;32m==> default: --> Processing Dependency: glibc-headers = 2.17-106.el7_2.6 for package: glibc-devel-2.17-106.el7_2.6.x86_64[0m
+[1;32m==> default: --> Processing Dependency: glibc = 2.17-106.el7_2.6 for package: glibc-devel-2.17-106.el7_2.6.x86_64[0m
+[1;32m==> default: --> Processing Dependency: glibc-headers for package: glibc-devel-2.17-106.el7_2.6.x86_64[0m
+[1;32m==> default: ---> Package libmpc.x86_64 0:1.0.1-3.el7 will be installed[0m
+[1;32m==> default: ---> Package mpfr.x86_64 0:3.1.1-4.el7 will be installed[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package glibc.x86_64 0:2.17-106.el7_2.4 will be updated[0m
+[1;32m==> default: --> Processing Dependency: glibc = 2.17-106.el7_2.4 for package: glibc-common-2.17-106.el7_2.4.x86_64[0m
+[1;32m==> default: ---> Package glibc.x86_64 0:2.17-106.el7_2.6 will be an update[0m
+[1;32m==> default: ---> Package glibc-headers.x86_64 0:2.17-106.el7_2.6 will be installed[0m
+[1;32m==> default: --> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.17-106.el7_2.6.x86_64[0m
+[1;32m==> default: --> Processing Dependency: kernel-headers for package: glibc-headers-2.17-106.el7_2.6.x86_64
+==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package glibc-common.x86_64 0:2.17-106.el7_2.4 will be updated[0m
+[1;32m==> default: ---> Package glibc-common.x86_64 0:2.17-106.el7_2.6 will be an update[0m
+[1;32m==> default: ---> Package kernel-headers.x86_64 0:3.10.0-327.18.2.el7 will be installed[0m
+[1;32m==> default: --> Finished Dependency Resolution[0m
+[1;32m==> default: 
+==> default: Dependencies Resolved[0m
+[1;32m==> default: 
+==> default: ================================================================================
+==> default:  Package             Arch        Version                     Repository    Size
+==> default: ================================================================================
+==> default: Installing:
+==> default:  gcc                 x86_64      4.8.5-4.el7                 base          16 M
+==> default: Installing for dependencies:
+==> default:  cpp                 x86_64      4.8.5-4.el7                 base         5.9 M
+==> default:  glibc-devel         x86_64      2.17-106.el7_2.6            updates      1.0 M
+==> default:  glibc-headers       x86_64      2.17-106.el7_2.6            updates      662 k
+==> default:  kernel-headers      x86_64      3.10.0-327.18.2.el7         updates      3.2 M
+==> default:  libmpc              x86_64      1.0.1-3.el7                 base          51 k
+==> default:  mpfr                x86_64      3.1.1-4.el7                 base         203 k
+==> default: Updating for dependencies:
+==> default:  glibc               x86_64      2.17-106.el7_2.6            updates      3.6 M
+==> default:  glibc-common        x86_64      2.17-106.el7_2.6            updates       11 M
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Install  1 Package  (+6 Dependent packages)
+==> default: Upgrade             ( 2 Dependent packages)[0m
+[1;32m==> default: Total download size: 42 M
+==> default: Downloading packages:[0m
+[1;31m==> default: http://lug.mtu.edu/centos/7.2.1511/updates/x86_64/Packages/glibc-common-2.17-106.el7_2.6.x86_64.rpm: [Errno 14] HTTP Error 404 - Not Found[0m
+[1;31m==> default: Trying other mirror.[0m
+[1;31m==> default: To address this issue please refer to the below knowledge base article 
+==> default: 
+==> default: https://access.redhat.com/articles/1320623
+==> default: 
+==> default: If above article doesn't help to resolve this issue please create a bug on https://bugs.centos.org/[0m
+[1;32m==> default: --------------------------------------------------------------------------------[0m
+[1;32m==> default: Total                                              1.3 MB/s |  42 MB  00:33     [0m
+[1;32m==> default: Running transaction check[0m
+[1;32m==> default: Running transaction test[0m
+[1;32m==> default: Transaction test succeeded[0m
+[1;32m==> default: Running transaction[0m
+[1;32m==> default:   Updating   : glibc-2.17-106.el7_2.6.x86_64                               1/11[0m
+[1;32m==> default:  
+==> default:   Updating   : glibc-common-2.17-106.el7_2.6.x86_64                        2/11[0m
+[1;32m==> default:  
+==> default:   Installing : mpfr-3.1.1-4.el7.x86_64                                     3/11[0m
+[1;32m==> default:  
+==> default:   Installing : libmpc-1.0.1-3.el7.x86_64                                   4/11[0m
+[1;32m==> default:  
+==> default:   Installing : cpp-4.8.5-4.el7.x86_64                                      5/11[0m
+[1;32m==> default:  
+==> default:   Installing : kernel-headers-3.10.0-327.18.2.el7.x86_64                   6/11[0m
+[1;32m==> default:  
+==> default:   Installing : glibc-headers-2.17-106.el7_2.6.x86_64                       7/11[0m
+[1;32m==> default:  
+==> default:   Installing : glibc-devel-2.17-106.el7_2.6.x86_64                         8/11[0m
+[1;32m==> default:  
+==> default:   Installing : gcc-4.8.5-4.el7.x86_64                                      9/11[0m
+[1;32m==> default:  
+==> default:   Cleanup    : glibc-2.17-106.el7_2.4.x86_64                              10/11[0m
+[1;32m==> default:  
+==> default:   Cleanup    : glibc-common-2.17-106.el7_2.4.x86_64                       11/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : glibc-common-2.17-106.el7_2.6.x86_64                        1/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : glibc-headers-2.17-106.el7_2.6.x86_64                       2/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : gcc-4.8.5-4.el7.x86_64                                      3/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : cpp-4.8.5-4.el7.x86_64                                      4/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : glibc-devel-2.17-106.el7_2.6.x86_64                         5/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : glibc-2.17-106.el7_2.6.x86_64                               6/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : mpfr-3.1.1-4.el7.x86_64                                     7/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : libmpc-1.0.1-3.el7.x86_64                                   8/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : kernel-headers-3.10.0-327.18.2.el7.x86_64                   9/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : glibc-common-2.17-106.el7_2.4.x86_64                       10/11[0m
+[1;32m==> default:  
+==> default:   Verifying  : glibc-2.17-106.el7_2.4.x86_64                              11/11[0m
+[1;32m==> default:  
+==> default: 
+==> default: Installed:
+==> default:   gcc.x86_64 0:4.8.5-4.el7                                                      
+==> default: 
+==> default: Dependency Installed:
+==> default:   cpp.x86_64 0:4.8.5-4.el7                                                      
+==> default:   glibc-devel.x86_64 0:2.17-106.el7_2.6                                         
+==> default:   glibc-headers.x86_64 0:2.17-106.el7_2.6                                       
+==> default:   kernel-headers.x86_64 0:3.10.0-327.18.2.el7                                   
+==> default:   libmpc.x86_64 0:1.0.1-3.el7                                                   
+==> default:   mpfr.x86_64 0:3.1.1-4.el7                                                     
+==> default: 
+==> default: Dependency Updated:
+==> default:   glibc.x86_64 0:2.17-106.el7_2.6     glibc-common.x86_64 0:2.17-106.el7_2.6    [0m
+[1;32m==> default: Complete![0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: Loaded plugins: fastestmirror[0m
+[1;32m==> default: Loading mirror speeds from cached hostfile[0m
+[1;32m==> default:  * base: mirror.sanctuaryhost.com[0m
+[1;32m==> default:  * epel: mirror.steadfast.net[0m
+[1;32m==> default:  * extras: centos.mirrors.wvstateu.edu[0m
+[1;32m==> default:  * updates: mirror.steadfast.net[0m
+[1;32m==> default: Package sqlite-3.7.17-8.el7.x86_64 already installed and latest version
+==> default: Nothing to do[0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: Loaded plugins: fastestmirror[0m
+[1;32m==> default: Loading mirror speeds from cached hostfile[0m
+[1;32m==> default:  * base: mirror.sanctuaryhost.com[0m
+[1;32m==> default:  * epel: mirror.steadfast.net[0m
+[1;32m==> default:  * extras: centos.mirrors.wvstateu.edu[0m
+[1;32m==> default:  * updates: mirror.steadfast.net[0m
+[1;32m==> default: Resolving Dependencies[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package sqlite-devel.x86_64 0:3.7.17-8.el7 will be installed[0m
+[1;32m==> default: --> Finished Dependency Resolution[0m
+[1;32m==> default: 
+==> default: Dependencies Resolved[0m
+[1;32m==> default: 
+==> default: ================================================================================
+==> default:  Package              Arch           Version                 Repository    Size
+==> default: ================================================================================
+==> default: Installing:
+==> default:  sqlite-devel         x86_64         3.7.17-8.el7            base         104 k
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Install  1 Package[0m
+[1;32m==> default: Total download size: 104 k
+==> default: Installed size: 366 k[0m
+[1;32m==> default: Downloading packages:[0m
+[1;32m==> default: Running transaction check[0m
+[1;32m==> default: Running transaction test[0m
+[1;32m==> default: Transaction test succeeded[0m
+[1;32m==> default: Running transaction[0m
+[1;32m==> default:   Installing : sqlite-devel-3.7.17-8.el7.x86_64                             1/1[0m
+[1;32m==> default:  
+==> default:   Verifying  : sqlite-devel-3.7.17-8.el7.x86_64                             1/1[0m
+[1;32m==> default:  
+==> default: 
+==> default: Installed:
+==> default:   sqlite-devel.x86_64 0:3.7.17-8.el7                                            [0m
+[1;32m==> default: Complete![0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: Loaded plugins: fastestmirror[0m
+[1;32m==> default: Loading mirror speeds from cached hostfile[0m
+[1;32m==> default:  * base: mirror.sanctuaryhost.com[0m
+[1;32m==> default:  * epel: mirror.steadfast.net[0m
+[1;32m==> default:  * extras: centos.mirrors.wvstateu.edu[0m
+[1;32m==> default:  * updates: mirror.steadfast.net[0m
+[1;32m==> default: Resolving Dependencies[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package git.x86_64 0:1.8.3.1-6.el7_2.1 will be installed[0m
+[1;32m==> default: --> Processing Dependency: perl-Git = 1.8.3.1-6.el7_2.1 for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl >= 5.008 for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(warnings) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(vars) for package: git-1.8.3.1-6.el7_2.1.x86_64
+==> default: --> Processing Dependency: perl(strict) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(lib) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Term::ReadKey) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Git) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Getopt::Long) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(File::stat) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(File::Temp) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(File::Spec) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(File::Path) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(File::Find) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(File::Copy) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(File::Basename) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Exporter) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Error) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: /usr/bin/perl for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Processing Dependency: libgnome-keyring.so.0()(64bit) for package: git-1.8.3.1-6.el7_2.1.x86_64[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package libgnome-keyring.x86_64 0:3.8.0-3.el7 will be installed[0m
+[1;32m==> default: ---> Package perl.x86_64 4:5.16.3-286.el7 will be installed[0m
+[1;32m==> default: --> Processing Dependency: perl-libs = 4:5.16.3-286.el7 for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Scalar::Util) >= 1.10 for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl-macros for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl-libs for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(threads::shared) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(threads) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(constant) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Time::Local) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Time::HiRes) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Storable) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Socket) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Scalar::Util) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Pod::Simple::XHTML) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Pod::Simple::Search) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Filter::Util::Call) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: perl(Carp) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: --> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.16.3-286.el7.x86_64[0m
+[1;32m==> default: ---> Package perl-Error.noarch 1:0.17020-2.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Exporter.noarch 0:5.68-3.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-File-Path.noarch 0:2.09-2.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-File-Temp.noarch 0:0.23.01-3.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Getopt-Long.noarch 0:2.40-2.el7 will be installed[0m
+[1;32m==> default: --> Processing Dependency: perl(Pod::Usage) >= 1.14 for package: perl-Getopt-Long-2.40-2.el7.noarch[0m
+[1;32m==> default: --> Processing Dependency: perl(Text::ParseWords) for package: perl-Getopt-Long-2.40-2.el7.noarch[0m
+[1;32m==> default: ---> Package perl-Git.noarch 0:1.8.3.1-6.el7_2.1 will be installed[0m
+[1;32m==> default: ---> Package perl-PathTools.x86_64 0:3.40-5.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-TermReadKey.x86_64 0:2.30-20.el7 will be installed[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package perl-Carp.noarch 0:1.26-244.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Filter.x86_64 0:1.49-3.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Pod-Simple.noarch 1:3.28-4.el7 will be installed[0m
+[1;32m==> default: --> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.28-4.el7.noarch[0m
+[1;32m==> default: --> Processing Dependency: perl(Encode) for package: 1:perl-Pod-Simple-3.28-4.el7.noarch[0m
+[1;32m==> default: ---> Package perl-Pod-Usage.noarch 0:1.63-3.el7 will be installed[0m
+[1;32m==> default: --> Processing Dependency: perl(Pod::Text) >= 3.15 for package: perl-Pod-Usage-1.63-3.el7.noarch[0m
+[1;32m==> default: --> Processing Dependency: perl-Pod-Perldoc for package: perl-Pod-Usage-1.63-3.el7.noarch[0m
+[1;32m==> default: ---> Package perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Socket.x86_64 0:2.010-3.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Storable.x86_64 0:2.45-3.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Text-ParseWords.noarch 0:3.29-4.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Time-HiRes.x86_64 4:1.9725-3.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Time-Local.noarch 0:1.2300-2.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-constant.noarch 0:1.27-2.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-libs.x86_64 4:5.16.3-286.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-macros.x86_64 4:5.16.3-286.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-threads.x86_64 0:1.87-4.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-threads-shared.x86_64 0:1.43-6.el7 will be installed[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package perl-Encode.x86_64 0:2.51-7.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Pod-Escapes.noarch 1:1.04-286.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-Pod-Perldoc.noarch 0:3.20-4.el7 will be installed[0m
+[1;32m==> default: --> Processing Dependency: perl(parent) for package: perl-Pod-Perldoc-3.20-4.el7.noarch[0m
+[1;32m==> default: --> Processing Dependency: perl(HTTP::Tiny) for package: perl-Pod-Perldoc-3.20-4.el7.noarch[0m
+[1;32m==> default: ---> Package perl-podlators.noarch 0:2.5.1-3.el7 will be installed[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package perl-HTTP-Tiny.noarch 0:0.033-3.el7 will be installed[0m
+[1;32m==> default: ---> Package perl-parent.noarch 1:0.225-244.el7 will be installed[0m
+[1;32m==> default: --> Finished Dependency Resolution[0m
+[1;32m==> default: 
+==> default: Dependencies Resolved[0m
+[1;32m==> default: 
+==> default: ================================================================================
+==> default:  Package                    Arch       Version                Repository   Size
+==> default: ================================================================================
+==> default: Installing:
+==> default:  git                        x86_64     1.8.3.1-6.el7_2.1      updates     4.4 M
+==> default: Installing for dependencies:
+==> default:  libgnome-keyring           x86_64     3.8.0-3.el7            base        109 k
+==> default:  perl                       x86_64     4:5.16.3-286.el7       base        8.0 M
+==> default:  perl-Carp                  noarch     1.26-244.el7           base         19 k
+==> default:  perl-Encode                x86_64     2.51-7.el7             base        1.5 M
+==> default:  perl-Error                 noarch     1:0.17020-2.el7        base         32 k
+==> default:  perl-Exporter              noarch     5.68-3.el7             base         28 k
+==> default:  perl-File-Path             noarch     2.09-2.el7             base         26 k
+==> default:  perl-File-Temp             noarch     0.23.01-3.el7          base         56 k
+==> default:  perl-Filter                x86_64     1.49-3.el7             base         76 k
+==> default:  perl-Getopt-Long           noarch     2.40-2.el7             base         56 k
+==> default:  perl-Git                   noarch     1.8.3.1-6.el7_2.1      updates      53 k
+==> default:  perl-HTTP-Tiny             noarch     0.033-3.el7            base         38 k
+==> default:  perl-PathTools             x86_64     3.40-5.el7             base         82 k
+==> default:  perl-Pod-Escapes           noarch     1:1.04-286.el7         base         50 k
+==> default:  perl-Pod-Perldoc           noarch     3.20-4.el7             base         87 k
+==> default:  perl-Pod-Simple            noarch     1:3.28-4.el7           base        216 k
+==> default:  perl-Pod-Usage             noarch     1.63-3.el7             base         27 k
+==> default:  perl-Scalar-List-Utils     x86_64     1.27-248.el7           base         36 k
+==> default:  perl-Socket                x86_64     2.010-3.el7            base         49 k
+==> default:  perl-Storable              x86_64     2.45-3.el7             base         77 k
+==> default:  perl-TermReadKey           x86_64     2.30-20.el7            base         31 k
+==> default:  perl-Text-ParseWords       noarch     3.29-4.el7             base         14 k
+==> default:  perl-Time-HiRes            x86_64     4:1.9725-3.el7         base         45 k
+==> default:  perl-Time-Local            noarch     1.2300-2.el7           base         24 k
+==> default:  perl-constant              noarch     1.27-2.el7             base         19 k
+==> default:  perl-libs                  x86_64     4:5.16.3-286.el7       base        687 k
+==> default:  perl-macros                x86_64     4:5.16.3-286.el7       base         43 k
+==> default:  perl-parent                noarch     1:0.225-244.el7        base         12 k
+==> default:  perl-podlators             noarch     2.5.1-3.el7            base        112 k
+==> default:  perl-threads               x86_64     1.87-4.el7             base         49 k
+==> default:  perl-threads-shared        x86_64     1.43-6.el7             base         39 k
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Install  1 Package (+31 Dependent packages)[0m
+[1;32m==> default: Total download size: 16 M[0m
+[1;32m==> default: Installed size: 59 M[0m
+[1;32m==> default: Downloading packages:[0m
+[1;32m==> default: --------------------------------------------------------------------------------[0m
+[1;32m==> default: Total                                              1.7 MB/s |  16 MB  00:09     [0m
+[1;32m==> default: Running transaction check[0m
+[1;32m==> default: Running transaction test[0m
+[1;32m==> default: Transaction test succeeded[0m
+[1;32m==> default: Running transaction[0m
+[1;32m==> default:   Installing : 1:perl-parent-0.225-244.el7.noarch                          1/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-HTTP-Tiny-0.033-3.el7.noarch                           2/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-podlators-2.5.1-3.el7.noarch                           3/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Pod-Perldoc-3.20-4.el7.noarch                          4/32[0m
+[1;32m==> default:  
+==> default:   Installing : 1:perl-Pod-Escapes-1.04-286.el7.noarch                      5/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Text-ParseWords-3.29-4.el7.noarch                      6/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Encode-2.51-7.el7.x86_64                               7/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Pod-Usage-1.63-3.el7.noarch                            8/32[0m
+[1;32m==> default:  
+==> default:   Installing : 4:perl-libs-5.16.3-286.el7.x86_64                           9/32[0m
+[1;32m==> default:  
+==> default:   Installing : 4:perl-macros-5.16.3-286.el7.x86_64                        10/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Storable-2.45-3.el7.x86_64                            11/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Exporter-5.68-3.el7.noarch                            12/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-constant-1.27-2.el7.noarch                            13/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Time-Local-1.2300-2.el7.noarch                        14/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Carp-1.26-244.el7.noarch                              15/32[0m
+[1;32m==> default:  
+==> default:   Installing : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      16/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-PathTools-3.40-5.el7.x86_64                           17/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 18/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-File-Temp-0.23.01-3.el7.noarch                        19/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-File-Path-2.09-2.el7.noarch                           20/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-threads-shared-1.43-6.el7.x86_64                      21/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-threads-1.87-4.el7.x86_64                             22/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Socket-2.010-3.el7.x86_64                             23/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Filter-1.49-3.el7.x86_64                              24/32[0m
+[1;32m==> default:  
+==> default:   Installing : 1:perl-Pod-Simple-3.28-4.el7.noarch                        25/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Getopt-Long-2.40-2.el7.noarch                         26/32[0m
+[1;32m==> default:  
+==> default:   Installing : 4:perl-5.16.3-286.el7.x86_64                               27/32[0m
+[1;32m==> default:  
+==> default:   Installing : 1:perl-Error-0.17020-2.el7.noarch                          28/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-TermReadKey-2.30-20.el7.x86_64                        29/32[0m
+[1;32m==> default:  
+==> default:   Installing : libgnome-keyring-3.8.0-3.el7.x86_64                        30/32[0m
+[1;32m==> default:  
+==> default:   Installing : perl-Git-1.8.3.1-6.el7_2.1.noarch                          31/32[0m
+[1;32m==> default:  
+==> default:   Installing : git-1.8.3.1-6.el7_2.1.x86_64                               32/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                           1/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-threads-shared-1.43-6.el7.x86_64                       2/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Storable-2.45-3.el7.x86_64                             3/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Exporter-5.68-3.el7.noarch                             4/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-constant-1.27-2.el7.noarch                             5/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-PathTools-3.40-5.el7.x86_64                            6/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : 4:perl-libs-5.16.3-286.el7.x86_64                           7/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : 4:perl-macros-5.16.3-286.el7.x86_64                         8/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : 1:perl-Pod-Escapes-1.04-286.el7.noarch                      9/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : 1:perl-parent-0.225-244.el7.noarch                         10/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-TermReadKey-2.30-20.el7.x86_64                        11/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : 4:perl-5.16.3-286.el7.x86_64                               12/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-File-Temp-0.23.01-3.el7.noarch                        13/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : 1:perl-Pod-Simple-3.28-4.el7.noarch                        14/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Time-Local-1.2300-2.el7.noarch                        15/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Pod-Perldoc-3.20-4.el7.noarch                         16/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Git-1.8.3.1-6.el7_2.1.noarch                          17/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Carp-1.26-244.el7.noarch                              18/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : 1:perl-Error-0.17020-2.el7.noarch                          19/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      20/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 21/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : libgnome-keyring-3.8.0-3.el7.x86_64                        22/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Pod-Usage-1.63-3.el7.noarch                           23/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Encode-2.51-7.el7.x86_64                              24/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-podlators-2.5.1-3.el7.noarch                          25/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Getopt-Long-2.40-2.el7.noarch                         26/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-File-Path-2.09-2.el7.noarch                           27/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-threads-1.87-4.el7.x86_64                             28/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Socket-2.010-3.el7.x86_64                             29/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Filter-1.49-3.el7.x86_64                              30/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : perl-Text-ParseWords-3.29-4.el7.noarch                     31/32[0m
+[1;32m==> default:  
+==> default:   Verifying  : git-1.8.3.1-6.el7_2.1.x86_64                               32/32[0m
+[1;32m==> default:  
+==> default: 
+==> default: Installed:
+==> default:   git.x86_64 0:1.8.3.1-6.el7_2.1                                                
+==> default: 
+==> default: Dependency Installed:
+==> default:   libgnome-keyring.x86_64 0:3.8.0-3.el7                                         
+==> default:   perl.x86_64 4:5.16.3-286.el7                                                  
+==> default:   perl-Carp.noarch 0:1.26-244.el7                                               
+==> default:   perl-Encode.x86_64 0:2.51-7.el7                                               
+==> default:   perl-Error.noarch 1:0.17020-2.el7                                             
+==> default:   perl-Exporter.noarch 0:5.68-3.el7                                             
+==> default:   perl-File-Path.noarch 0:2.09-2.el7                                            
+==> default:   perl-File-Temp.noarch 0:0.23.01-3.el7                                         
+==> default:   perl-Filter.x86_64 0:1.49-3.el7                                               
+==> default:   perl-Getopt-Long.noarch 0:2.40-2.el7                                          
+==> default:   perl-Git.noarch 0:1.8.3.1-6.el7_2.1                                           
+==> default:   perl-HTTP-Tiny.noarch 0:0.033-3.el7                                           
+==> default:   perl-PathTools.x86_64 0:3.40-5.el7                                            
+==> default:   perl-Pod-Escapes.noarch 1:1.04-286.el7                                        
+==> default:   perl-Pod-Perldoc.noarch 0:3.20-4.el7                                          
+==> default:   perl-Pod-Simple.noarch 1:3.28-4.el7                                           
+==> default:   perl-Pod-Usage.noarch 0:1.63-3.el7                                            
+==> default:   perl-Scalar-List-Utils.x86_64 0:1.27-248.el7                                  
+==> default:   perl-Socket.x86_64 0:2.010-3.el7                                              
+==> default:   perl-Storable.x86_64 0:2.45-3.el7                                             
+==> default:   perl-TermReadKey.x86_64 0:2.30-20.el7                                         
+==> default:   perl-Text-ParseWords.noarch 0:3.29-4.el7                                      
+==> default:   perl-Time-HiRes.x86_64 4:1.9725-3.el7                                         
+==> default:   perl-Time-Local.noarch 0:1.2300-2.el7                                         
+==> default:   perl-constant.noarch 0:1.27-2.el7                                             
+==> default:   perl-libs.x86_64 4:5.16.3-286.el7                                             
+==> default:   perl-macros.x86_64 4:5.16.3-286.el7                                           
+==> default:   perl-parent.noarch 1:0.225-244.el7                                            
+==> default:   perl-podlators.noarch 0:2.5.1-3.el7                                           
+==> default:   perl-threads.x86_64 0:1.87-4.el7                                              
+==> default:   perl-threads-shared.x86_64 0:1.43-6.el7                                       [0m
+[1;32m==> default: Complete![0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: Loaded plugins: fastestmirror[0m
+[1;32m==> default: Loading mirror speeds from cached hostfile[0m
+[1;32m==> default:  * base: mirror.sanctuaryhost.com[0m
+[1;32m==> default:  * epel: mirror.steadfast.net[0m
+[1;32m==> default:  * extras: centos.mirrors.wvstateu.edu[0m
+[1;32m==> default:  * updates: mirror.steadfast.net[0m
+[1;32m==> default: Package python-2.7.5-34.el7.x86_64 already installed and latest version[0m
+[1;32m==> default: Nothing to do[0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: Loaded plugins: fastestmirror[0m
+[1;32m==> default: Loading mirror speeds from cached hostfile[0m
+[1;32m==> default:  * base: mirror.sanctuaryhost.com[0m
+[1;32m==> default:  * epel: mirror.steadfast.net[0m
+[1;32m==> default:  * extras: centos.mirrors.wvstateu.edu[0m
+[1;32m==> default:  * updates: mirror.steadfast.net[0m
+[1;32m==> default: Resolving Dependencies[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package python-pip.noarch 0:7.1.0-1.el7 will be installed[0m
+[1;32m==> default: --> Processing Dependency: python-setuptools for package: python-pip-7.1.0-1.el7.noarch[0m
+[1;32m==> default: --> Running transaction check
+==> default: ---> Package python-setuptools.noarch 0:0.9.8-4.el7 will be installed[0m
+[1;32m==> default: --> Processing Dependency: python-backports-ssl_match_hostname for package: python-setuptools-0.9.8-4.el7.noarch[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package python-backports-ssl_match_hostname.noarch 0:3.4.0.2-4.el7 will be installed[0m
+[1;32m==> default: --> Processing Dependency: python-backports for package: python-backports-ssl_match_hostname-3.4.0.2-4.el7.noarch[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package python-backports.x86_64 0:1.0-8.el7 will be installed[0m
+[1;32m==> default: --> Finished Dependency Resolution[0m
+[1;32m==> default: 
+==> default: Dependencies Resolved[0m
+[1;32m==> default: 
+==> default: ================================================================================
+==> default:  Package                               Arch     Version            Repository
+==> default:                                                                            Size
+==> default: ================================================================================
+==> default: Installing:
+==> default:  python-pip                            noarch   7.1.0-1.el7        epel   1.5 M
+==> default: Installing for dependencies:
+==> default:  python-backports                      x86_64   1.0-8.el7          base   5.8 k
+==> default:  python-backports-ssl_match_hostname   noarch   3.4.0.2-4.el7      base    12 k
+==> default:  python-setuptools                     noarch   0.9.8-4.el7        base   396 k
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Install  1 Package (+3 Dependent packages)[0m
+[1;32m==> default: Total download size: 1.9 M[0m
+[1;32m==> default: Installed size: 8.6 M
+==> default: Downloading packages:[0m
+[1;31m==> default: warning: /var/cache/yum/x86_64/7/epel/packages/python-pip-7.1.0-1.el7.noarch.rpm: Header V3 RSA/SHA256 Signature, key ID 352c64e5: NOKEY[0m
+[1;32m==> default: Public key for python-pip-7.1.0-1.el7.noarch.rpm is not installed[0m
+[1;32m==> default: --------------------------------------------------------------------------------[0m
+[1;32m==> default: Total                                              1.0 MB/s | 1.9 MB  00:01     [0m
+[1;32m==> default: Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7[0m
+[1;31m==> default: Importing GPG key 0x352C64E5:
+==> default:  Userid     : "Fedora EPEL (7) <epel@fedoraproject.org>"
+==> default:  Fingerprint: 91e9 7d7c 4a5e 96f1 7f3e 888f 6a2f aea2 352c 64e5
+==> default:  Package    : epel-release-7-6.noarch (@extras)
+==> default:  From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7[0m
+[1;32m==> default: Running transaction check[0m
+[1;32m==> default: Running transaction test[0m
+[1;32m==> default: Transaction test succeeded[0m
+[1;32m==> default: Running transaction[0m
+[1;32m==> default:   Installing : python-backports-1.0-8.el7.x86_64                            1/4[0m
+[1;32m==> default:  
+==> default:   Installing : python-backports-ssl_match_hostname-3.4.0.2-4.el7.noarch     2/4[0m
+[1;32m==> default:  
+==> default:   Installing : python-setuptools-0.9.8-4.el7.noarch                         3/4[0m
+[1;32m==> default:  
+==> default:   Installing : python-pip-7.1.0-1.el7.noarch                                4/4[0m
+[1;32m==> default:  
+==> default:   Verifying  : python-pip-7.1.0-1.el7.noarch                                1/4[0m
+[1;32m==> default:  
+==> default:   Verifying  : python-setuptools-0.9.8-4.el7.noarch                         2/4[0m
+[1;32m==> default:  
+==> default:   Verifying  : python-backports-1.0-8.el7.x86_64                            3/4[0m
+[1;32m==> default:  
+==> default:   Verifying  : python-backports-ssl_match_hostname-3.4.0.2-4.el7.noarch     4/4[0m
+[1;32m==> default:  
+==> default: 
+==> default: Installed:
+==> default:   python-pip.noarch 0:7.1.0-1.el7                                               
+==> default: 
+==> default: Dependency Installed:
+==> default:   python-backports.x86_64 0:1.0-8.el7                                           
+==> default:   python-backports-ssl_match_hostname.noarch 0:3.4.0.2-4.el7                    
+==> default:   python-setuptools.noarch 0:0.9.8-4.el7                                        [0m
+[1;32m==> default: Complete![0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: Loaded plugins: fastestmirror[0m
+[1;32m==> default: Loading mirror speeds from cached hostfile[0m
+[1;32m==> default:  * base: mirror.sanctuaryhost.com[0m
+[1;32m==> default:  * epel: mirror.steadfast.net[0m
+[1;32m==> default:  * extras: centos.mirrors.wvstateu.edu[0m
+[1;32m==> default:  * updates: mirror.steadfast.net[0m
+[1;32m==> default: Resolving Dependencies[0m
+[1;32m==> default: --> Running transaction check[0m
+[1;32m==> default: ---> Package python-devel.x86_64 0:2.7.5-34.el7 will be installed[0m
+[1;32m==> default: --> Finished Dependency Resolution[0m
+[1;32m==> default: 
+==> default: Dependencies Resolved[0m
+[1;32m==> default: 
+==> default: ================================================================================
+==> default:  Package              Arch           Version                 Repository    Size
+==> default: ================================================================================
+==> default: Installing:
+==> default:  python-devel         x86_64         2.7.5-34.el7            base         391 k
+==> default: 
+==> default: Transaction Summary
+==> default: ================================================================================
+==> default: Install  1 Package[0m
+[1;32m==> default: Total download size: 391 k
+==> default: Installed size: 1.0 M[0m
+[1;32m==> default: Downloading packages:[0m
+[1;32m==> default: Running transaction check[0m
+[1;32m==> default: Running transaction test[0m
+[1;32m==> default: Transaction test succeeded[0m
+[1;32m==> default: Running transaction[0m
+[1;32m==> default:   Installing : python-devel-2.7.5-34.el7.x86_64                             1/1[0m
+[1;32m==> default:  
+==> default:   Verifying  : python-devel-2.7.5-34.el7.x86_64                             1/1[0m
+[1;32m==> default:  
+==> default: 
+==> default: Installed:
+==> default:   python-devel.x86_64 0:2.7.5-34.el7                                            [0m
+[1;32m==> default: Complete![0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;31m==> default: --2016-05-15 15:32:02--  https://bertini.nd.edu/BertiniLinux64_v1.5.tar.gz[0m
+[1;31m==> default: Resolving bertini.nd.edu (bertini.nd.edu)... [0m
+[1;31m==> default: 129.74.1.74
+==> default: Connecting to bertini.nd.edu (bertini.nd.edu)|129.74.1.74|:443... [0m
+[1;31m==> default: connected.[0m
+[1;31m==> default: HTTP request sent, awaiting response... [0m
+[1;31m==> default: 200 OK
+==> default: Length: 9093688 (8.7M) [application/x-tar][0m
+[1;31m==> default: Saving to: ‘BertiniLinux64_v1.5.tar.gz’
+==> default: 
+==> default:      0K ..[0m
+[1;31m==> default: ......[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: ..  0%  744K 12s
+==> default:     50K ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ..... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: ....  1% 1.34M 9s
+==> default:    100K ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  [0m
+[1;31m==> default: ........[0m
+[1;31m==> default: .. ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: ....  1%  937K 9s
+==> default:    150K ..........[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: ......  2% 2.14M 8s[0m
+[1;31m==> default: 
+==> default:    200K .......... ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ..........[0m
+[1;31m==> default:  ..........  2% 1.63M 7s
+==> default:    250K ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: ....[0m
+[1;31m==> default:  [0m
+[1;31m==> default: ........[0m
+[1;31m==> default: ..  3% 1.32M 7s
+==> default:    300K ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  .......... ....[0m
+[1;31m==> default: ......  3% 1.85M 7s
+==> default:    350K .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  .......... ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ...  4% 1.56M 6s
+==> default:    400K ..........[0m
+[1;31m==> default:  .......... ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... .....[0m
+[1;31m==> default: .....  5%[0m
+[1;31m==> default:  2.58M 6s[0m
+[1;31m==> default: 
+==> default:    450K .......... ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  ..........  5% 1.30M 6s
+==> default:    500K ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  .......... ....[0m
+[1;31m==> default: ......  6% 1.70M 6s
+==> default:    550K ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . .......... .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ........ ..[0m
+[1;31m==> default: ........  6% 1.63M 6s[0m
+[1;31m==> default: 
+==> default:    600K .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: .....  7% 1.40M 6s
+==> default:    650K ........[0m
+[1;31m==> default: .. .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: ..  7% 1.99M 6s
+==> default:    700K ......[0m
+[1;31m==> default: .... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ... .....[0m
+[1;31m==> default: .....  8% 4.01M 5s[0m
+[1;31m==> default: 
+==> default:    750K ........[0m
+[1;31m==> default: .. ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . ..........  9% 1.87M 5s
+==> default:    800K .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: ...[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:   9% 2.35M 5s[0m
+[1;31m==> default: 
+==> default:    850K ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ...[0m
+[1;31m==> default:  10% 1.61M 5s
+==> default:    900K ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . 10% 1.79M 5s
+==> default:    950K .......[0m
+[1;31m==> default: ... ...[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ...... .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. .......... 11% 1.75M 5s
+==> default:   1000K .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ..... 11%[0m
+[1;31m==> default:  1.59M 5s
+==> default:   1050K .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  [0m
+[1;31m==> default: ........[0m
+[1;31m==> default: .. ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ......[0m
+[1;31m==> default: .... 12% 2.73M 5s
+==> default:   1100K .........[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. 12% 1.80M[0m
+[1;31m==> default:  5s
+==> default:   1150K ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .... .......... 13% 2.01M 5s[0m
+[1;31m==> default: 
+==> default:   1200K ........[0m
+[1;31m==> default: .[0m
+[1;31m==> default: . ...[0m
+[1;31m==> default: ....... .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: ......[0m
+[1;31m==> default:  .......... 14% 1.27M 5s
+==> default:   1250K ..[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: ....[0m
+[1;31m==> default:  14%[0m
+[1;31m==> default:  1.76M 5s
+==> default:   1300K ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... .[0m
+[1;31m==> default: ........[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... 15%[0m
+[1;31m==> default:  1.62M 5s
+==> default:   1350K .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . 15% 2.35M 4s
+==> default:   1400K .......[0m
+[1;31m==> default: ... .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... .........[0m
+[1;31m==> default: . 16% 1.78M 4s
+==> default:   1450K .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... 16% 2.63M 4s
+==> default:   1500K .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... ..........[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... 17% 2.08M 4s
+==> default:   1550K ........[0m
+[1;31m==> default: .. ..........[0m
+[1;31m==> default:  .......... ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ... 18% 1.49M 4s
+==> default:   1600K .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... .........[0m
+[1;31m==> default: . 18%[0m
+[1;31m==> default:  1.59M 4s
+==> default:   1650K .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. .......... 19% 2.53M 4s
+==> default:   1700K .[0m
+[1;31m==> default: ......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. .......... 19% 1.43M 4s
+==> default:   1750K ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ...[0m
+[1;31m==> default: ... .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... 20% 2.16M 4s
+==> default:   1800K ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ........[0m
+[1;31m==> default: . 20% 1.55M 4s
+==> default:   1850K ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: ......[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... 21% 2.20M 4s
+==> default:   1900K[0m
+[1;31m==> default:  .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... 21% 1.85M 4s
+==> default:   1950K ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  ..........[0m
+[1;31m==> default:  22% 2.14M 4s
+==> default:   2000K ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ 23%[0m
+[1;31m==> default:  1.62M[0m
+[1;31m==> default:  4s[0m
+[1;31m==> default: 
+==> default:   2050K[0m
+[1;31m==> default:  ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... .[0m
+[1;31m==> default: ........[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ..... 23% 2.28M 4s
+==> default:   2100K ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... 24% 1.87M 4s
+==> default:   2150K ........[0m
+[1;31m==> default: .[0m
+[1;31m==> default: . ......[0m
+[1;31m==> default: ....[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ..... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... 24% 3.40M 4s
+==> default:   2200K ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ........[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .... 25% 1.55M 4s
+==> default:   2250K ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... 25% 2.29M 4s
+==> default:   2300K .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. 26% 2.30M 4s
+==> default:   2350K ..........[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... .......... 27% 2.05M 4s[0m
+[1;31m==> default: 
+==> default:   2400K .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. ........[0m
+[1;31m==> default: .. 27% 1.42M 4s
+==> default:   2450K ..........[0m
+[1;31m==> default:  [0m
+[1;31m==> default: ........[0m
+[1;31m==> default: .. ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .. 28% 2.93M 4s
+==> default:   2500K ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ..... ..[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . 28% 1.07M 4s
+==> default:   2550K .......... ..[0m
+[1;31m==> default: ........ ....[0m
+[1;31m==> default: ...... ....[0m
+[1;31m==> default: ...[0m
+[1;31m==> default: ... .....[0m
+[1;31m==> default: ..... 29% 2.25M 4s[0m
+[1;31m==> default: 
+==> default:   2600K .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... 29% 1.74M 4s[0m
+[1;31m==> default: 
+==> default:   2650K[0m
+[1;31m==> default:  .........[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  ..........[0m
+[1;31m==> default:  30% 2.34M 3s
+==> default:   2700K ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: ....[0m
+[1;31m==> default:  .......... 30%[0m
+[1;31m==> default:  1.75M 3s
+==> default:   2750K ...[0m
+[1;31m==> default: ....... .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: .........[0m
+[1;31m==> default:  31% 2.28M 3s
+==> default:   2800K ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ 32% 1.76M 3s[0m
+[1;31m==> default: 
+==> default:   2850K ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... 32% 2.44M 3s
+==> default:   2900K ..[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .... ..........[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ...[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . 33%[0m
+[1;31m==> default:  1.34M 3s
+==> default:   2950K .......[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .. .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... .......... 33% 3.70M 3s[0m
+[1;31m==> default: 
+==> default:   3000K .......... ...[0m
+[1;31m==> default: ....... .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... 34%[0m
+[1;31m==> default:  1.55M 3s
+==> default:   3050K ...[0m
+[1;31m==> default: .......[0m
+[1;31m==> default:  .[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: .........[0m
+[1;31m==> default:  34% 2.33M 3s
+==> default:   3100K ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ 35% 1.53M 3s
+==> default:   3150K ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. .......... ..[0m
+[1;31m==> default: ........ 36% 1.91M 3s
+==> default:   3200K .....[0m
+[1;31m==> default: ..... .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... 36% 1.63M 3s
+==> default:   3250K .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... 37% 2.28M 3s
+==> default:   3300K ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: ......[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... 37% 1.63M 3s
+==> default:   3350K ..........[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... 38% 2.93M[0m
+[1;31m==> default:  3s
+==> default:   3400K ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  38% 1.74M 3s
+==> default:   3450K .[0m
+[1;31m==> default: ...[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... .........[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ 39% 2.37M 3s[0m
+[1;31m==> default: 
+==> default:   3500K .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ... ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: ...... 39% 2.72M 3s
+==> default:   3550K ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: ........ ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: ........ 40% 2.08M 3s[0m
+[1;31m==> default: 
+==> default:   3600K .....[0m
+[1;31m==> default: ..... .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... 41% 1.51M 3s
+==> default:   3650K .[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .[0m
+[1;31m==> default: . ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: ....... 41% 3.02M 3s
+==> default:   3700K ......[0m
+[1;31m==> default: .... ..........[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... .....[0m
+[1;31m==> default: ..... 42% 2.06M 3s
+==> default:   3750K ........[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default: .[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: ....[0m
+[1;31m==> default:  42% 1.45M 3s[0m
+[1;31m==> default: 
+==> default:   3800K ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... .[0m
+[1;31m==> default: ......... ..[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... 43%[0m
+[1;31m==> default:  1.56M 3s
+==> default:   3850K ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. .......... ..[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... .......[0m
+[1;31m==> default: ... 43% 2.83M 3s
+==> default:   3900K .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. 44% 1.63M 3s
+==> default:   3950K ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: ....... .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... ..........[0m
+[1;31m==> default:  45% 1.93M 3s[0m
+[1;31m==> default: 
+==> default:   4000K ........[0m
+[1;31m==> default: .. ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. .......... 45% 1.70M 3s
+==> default:   4050K .[0m
+[1;31m==> default: ........[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . ......[0m
+[1;31m==> default: .... 46% 2.27M[0m
+[1;31m==> default:  3s
+==> default:   4100K .........[0m
+[1;31m==> default: . .......... .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ...[0m
+[1;31m==> default:  46% 2.76M 3s
+==> default:   4150K .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... ....[0m
+[1;31m==> default: ..[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . 47% 1.75M 3s
+==> default:   4200K .......[0m
+[1;31m==> default: ... .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... .........[0m
+[1;31m==> default: . 47% 1.34M 3s
+==> default:   4250K .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... 48% 4.18M 2s
+==> default:   4300K .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ......[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: ........ ....[0m
+[1;31m==> default: ...... 48% 1.85M 2s
+==> default:   4350K ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ..... 49% 2.04M[0m
+[1;31m==> default:  2s
+==> default:   4400K .......[0m
+[1;31m==> default: ... .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... 50%[0m
+[1;31m==> default:  2.22M 2s
+==> default:   4450K ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default:  ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ..... .....[0m
+[1;31m==> default: ..[0m
+[1;31m==> default: ... 50% 1.79M 2s
+==> default:   4500K .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: .[0m
+[1;31m==> default:  51% 2.92M 2s
+==> default:   4550K .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  51% 2.20M 2s[0m
+[1;31m==> default: 
+==> default:   4600K ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ..... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... .....[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ 52% 2.36M 2s
+==> default:   4650K .....[0m
+[1;31m==> default: ..... .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... 52% 1.52M 2s
+==> default:   4700K .....[0m
+[1;31m==> default: ..... .........[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... 53% 2.35M 2s
+==> default:   4750K ........[0m
+[1;31m==> default: .. ..........[0m
+[1;31m==> default:  ..........[0m
+[1;31m==> default:  ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ..... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... 54% 2.20M 2s
+==> default:   4800K .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... 54% 1.95M 2s
+==> default:   4850K .......[0m
+[1;31m==> default: ... .......... .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... 55% 1.10M 2s
+==> default:   4900K .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . 55%[0m
+[1;31m==> default:  1.32M 2s[0m
+[1;31m==> default: 
+==> default:   4950K .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .. .......... 56% 2.65M 2s
+==> default:   5000K .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .... ..........[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. 56% 1.12M 2s
+==> default:   5050K ...[0m
+[1;31m==> default: ....... .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... ..........[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... 57% 2.89M 2s
+==> default:   5100K .[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: ....... 57% 2.06M 2s
+==> default:   5150K ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . ...[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ...[0m
+[1;31m==> default: ... .[0m
+[1;31m==> default: ........[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ...... 58%[0m
+[1;31m==> default:  1.44M[0m
+[1;31m==> default:  2s
+==> default:   5200K ..[0m
+[1;31m==> default: ......[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... 59% 1.52M 2s
+==> default:   5250K .........[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ......[0m
+[1;31m==> default: ..[0m
+[1;31m==> default: .. 59% 1.85M 2s
+==> default:   5300K ......[0m
+[1;31m==> default: .... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. .......... 60% 1.68M 2s[0m
+[1;31m==> default: 
+==> default:   5350K .......... ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. ..[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ... 60% 1.16M 2s[0m
+[1;31m==> default: 
+==> default:   5400K .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... 61% 2.73M 2s
+==> default:   5450K ...[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... .....[0m
+[1;31m==> default: ..... 61% 1.84M 2s
+==> default:   5500K ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: ....[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... 62% 1.83M 2s
+==> default:   5550K ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .[0m
+[1;31m==> default:  .......[0m
+[1;31m==> default: ... .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... 63% 1.66M 2s
+==> default:   5600K .....[0m
+[1;31m==> default: ..[0m
+[1;31m==> default: ..[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. 63% 2.22M 2s
+==> default:   5650K ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: ......[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... 64%[0m
+[1;31m==> default:  2.74M 2s
+==> default:   5700K ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ [0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ..... .......[0m
+[1;31m==> default: ...[0m
+[1;31m==> default:  64% 1.70M 2s
+==> default:   5750K .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. 65% 1.50M 2s
+==> default:   5800K ..........[0m
+[1;31m==> default:  .......... ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... .......... 65% 1.80M 2s[0m
+[1;31m==> default: 
+==> default:   5850K .......... ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... .........[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... 66% 1.63M 2s
+==> default:   5900K ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ........[0m
+[1;31m==> default: . 67%[0m
+[1;31m==> default:  2.89M 2s
+==> default:   5950K ....[0m
+[1;31m==> default: ...... ........[0m
+[1;31m==> default: .. ..........[0m
+[1;31m==> default:  .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: ....... 67% 1.49M 2s
+==> default:   6000K ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ....[0m
+[1;31m==> default: ...... 68%[0m
+[1;31m==> default:  2.03M 2s
+==> default:   6050K ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ......[0m
+[1;31m==> default: .... 68% 2.50M 1s
+==> default:   6100K .........[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. 69% 2.12M 1s
+==> default:   6150K ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: ....... 69% 1.62M 1s
+==> default:   6200K .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ....[0m
+[1;31m==> default: ......[0m
+[1;31m==> default:  70% 1.68M 1s
+==> default:   6250K ..[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ... .........[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... 70%[0m
+[1;31m==> default:  1.60M 1s
+==> default:   6300K ...[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ...[0m
+[1;31m==> default: ....... .....[0m
+[1;31m==> default: ..... 71% 2.71M 1s
+==> default:   6350K ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .... 72% 1.55M 1s
+==> default:   6400K .........[0m
+[1;31m==> default: . .......... .[0m
+[1;31m==> default: ...[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... .......... 72% 2.62M 1s[0m
+[1;31m==> default: 
+==> default:   6450K ........[0m
+[1;31m==> default: .. ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ......[0m
+[1;31m==> default:  73% 2.46M 1s
+==> default:   6500K ..[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default:  ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: ......[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .......[0m
+[1;31m==> default: . 73%[0m
+[1;31m==> default:  1.53M 1s
+==> default:   6550K ....[0m
+[1;31m==> default: ...... ..[0m
+[1;31m==> default: ......[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ... .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: .......[0m
+[1;31m==> default:  74%[0m
+[1;31m==> default:  1.51M 1s
+==> default:   6600K .[0m
+[1;31m==> default: ...[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... 74% 2.17M 1s
+==> default:   6650K ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... 75% 2.70M 1s[0m
+[1;31m==> default: 
+==> default:   6700K ..[0m
+[1;31m==> default: ........ ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .. .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  .......... 76% 2.08M 1s
+==> default:   6750K ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. .......... ..[0m
+[1;31m==> default: ........ 76% 1.01M 1s[0m
+[1;31m==> default: 
+==> default:   6800K ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: ........ 77%[0m
+[1;31m==> default:  2.24M 1s[0m
+[1;31m==> default: 
+==> default:   6850K ......[0m
+[1;31m==> default: .... ...[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ ....[0m
+[1;31m==> default: ..[0m
+[1;31m==> default: .... 77%[0m
+[1;31m==> default:  1.89M 1s
+==> default:   6900K ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . ..........[0m
+[1;31m==> default:  .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... 78% 2.48M 1s
+==> default:   6950K ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: . ......[0m
+[1;31m==> default: ....[0m
+[1;31m==> default:  .......... ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... 78% 1.91M 1s
+==> default:   7000K ..........[0m
+[1;31m==> default:  ..........[0m
+[1;31m==> default:  ...[0m
+[1;31m==> default: ....... .[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. 79% 2.03M 1s
+==> default:   7050K ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . 79% 1.81M 1s
+==> default:   7100K .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... 80%[0m
+[1;31m==> default:  3.83M 1s
+==> default:   7150K ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ......[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... 81%[0m
+[1;31m==> default:  1.30M 1s
+==> default:   7200K .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ..[0m
+[1;31m==> default: .... .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  .......... 81%[0m
+[1;31m==> default:  2.24M 1s
+==> default:   7250K ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: . .......... .[0m
+[1;31m==> default: ......... 82% 1.57M 1s
+==> default:   7300K ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... .........[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ 82% 2.66M 1s
+==> default:   7350K .....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: ....[0m
+[1;31m==> default:  .......... ...[0m
+[1;31m==> default: ....... 83% 1.58M 1s
+==> default:   7400K .[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .... .........[0m
+[1;31m==> default: .[0m
+[1;31m==> default:  83% 2.79M 1s
+==> default:   7450K .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... .....[0m
+[1;31m==> default: ..... 84% 1.24M 1s[0m
+[1;31m==> default: 
+==> default:   7500K .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. ..........[0m
+[1;31m==> default:  85% 2.32M 1s[0m
+[1;31m==> default: 
+==> default:   7550K .......... ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. .......... 85% 1.92M 1s
+==> default:   7600K .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .... ..........[0m
+[1;31m==> default:  .......... 86% 2.46M 1s
+==> default:   7650K ...[0m
+[1;31m==> default: ....... ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  ..........[0m
+[1;31m==> default:  86% 2.27M 1s
+==> default:   7700K ..[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ....... .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: ....[0m
+[1;31m==> default:  .......... 87% 2.21M 1s
+==> default:   7750K ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ........[0m
+[1;31m==> default: .. .......... ..[0m
+[1;31m==> default: ........ 87% 1.12M 1s
+==> default:   7800K .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. .......... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... 88% 1.34M 1s
+==> default:   7850K ...[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ... ..........[0m
+[1;31m==> default:  ..........[0m
+[1;31m==> default:  .........[0m
+[1;31m==> default: . ..[0m
+[1;31m==> default: ........ 88%[0m
+[1;31m==> default:  2.20M 1s[0m
+[1;31m==> default: 
+==> default:   7900K .....[0m
+[1;31m==> default: ..... ...[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: ....[0m
+[1;31m==> default:  .......... [0m
+[1;31m==> default: ...[0m
+[1;31m==> default: ....... 89% 1.59M 0s
+==> default:   7950K ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... 90% 2.18M 0s
+==> default:   8000K ..[0m
+[1;31m==> default: ......[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: ....... .[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .... 90%[0m
+[1;31m==> default:  2.22M 0s
+==> default:   8050K ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... 91% 2.09M 0s
+==> default:   8100K ....[0m
+[1;31m==> default: ...... ......[0m
+[1;31m==> default: .... .......[0m
+[1;31m==> default: ..[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ 91% 1.36M 0s
+==> default:   8150K ....[0m
+[1;31m==> default: ...... ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ......... ....[0m
+[1;31m==> default: ...... 92% 2.62M 0s
+==> default:   8200K ..[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: ..[0m
+[1;31m==> default: ..[0m
+[1;31m==> default:  ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........[0m
+[1;31m==> default:  ....[0m
+[1;31m==> default: ...... 92% 2.23M 0s
+==> default:   8250K .......[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .. .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  ........[0m
+[1;31m==> default: .. ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: .... 93% 1.99M 0s
+==> default:   8300K ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......... ..[0m
+[1;31m==> default: ........ ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . 94% 1.25M 0s
+==> default:   8350K .......[0m
+[1;31m==> default: ... .[0m
+[1;31m==> default: ........[0m
+[1;31m==> default: . ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... .....[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default:  94% 1.93M[0m
+[1;31m==> default:  0s
+==> default:   8400K [0m
+[1;31m==> default: .[0m
+[1;31m==> default: ......[0m
+[1;31m==> default: ... ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default:  ...[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ...[0m
+[1;31m==> default: ... .......... 95% 1.46M 0s[0m
+[1;31m==> default: 
+==> default:   8450K .......... ....[0m
+[1;31m==> default: ...... .......[0m
+[1;31m==> default: ... .........[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... 95% 1.95M 0s
+==> default:   8500K ..[0m
+[1;31m==> default: ........ .....[0m
+[1;31m==> default: ..... ........[0m
+[1;31m==> default: .. ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: ......... 96% 1.41M 0s
+==> default:   8550K ....[0m
+[1;31m==> default: ...... ........[0m
+[1;31m==> default: .[0m
+[1;31m==> default: . ......[0m
+[1;31m==> default: .... .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ........ ..[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ...... 96% 1.70M 0s[0m
+[1;31m==> default: 
+==> default:   8600K ........[0m
+[1;31m==> default: .. ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ..........[0m
+[1;31m==> default:  .......... 97%  834K 0s
+==> default:   8650K ...[0m
+[1;31m==> default: ....... .....[0m
+[1;31m==> default: ..[0m
+[1;31m==> default: ... ....[0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: ......... 97% 1.90M 0s
+==> default:   8700K ...[0m
+[1;31m==> default: ....... ......[0m
+[1;31m==> default: .... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: . .......[0m
+[1;31m==> default: ... .[0m
+[1;31m==> default: ........[0m
+[1;31m==> default: . 98%[0m
+[1;31m==> default:  1.49M 0s
+==> default:   8750K ....[0m
+[1;31m==> default: ...... ........[0m
+[1;31m==> default: .. .......... .[0m
+[1;31m==> default: ......... ...[0m
+[1;31m==> default: .......[0m
+[1;31m==> default:  99%[0m
+[1;31m==> default:  2.00M 0s
+==> default:   8800K .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: ... ....[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: .[0m
+[1;31m==> default:  [0m
+[1;31m==> default: ....[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .[0m
+[1;31m==> default: .... ..[0m
+[1;31m==> default: .....[0m
+[1;31m==> default: ... [0m
+[1;31m==> default: .......... 99%[0m
+[1;31m==> default:  1.59M[0m
+[1;31m==> default:  0s[0m
+[1;31m==> default: 
+==> default:   8850K[0m
+[1;31m==> default:  .......... ..........[0m
+[1;31m==> default:  .....[0m
+[1;31m==> default: .....                      100% 6.06M=4.8s
+==> default: 
+==> default: 2016-05-15 15:32:07 (1.82 MB/s) - ‘BertiniLinux64_v1.5.tar.gz’ saved [9093688/9093688][0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;32m==> default: BertiniLinux64_v1.5/[0m
+[1;32m==> default: BertiniLinux64_v1.5/Bertini_License[0m
+[1;32m==> default: BertiniLinux64_v1.5/bertini[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/
+==> default: BertiniLinux64_v1.5/examples/zero_dim/
+==> default: BertiniLinux64_v1.5/examples/zero_dim/user_homog/
+==> default: BertiniLinux64_v1.5/examples/zero_dim/user_homog/input
+==> default: BertiniLinux64_v1.5/examples/zero_dim/adaptive_prec/[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/zero_dim/adaptive_prec/input
+==> default: BertiniLinux64_v1.5/examples/zero_dim/basic_example/[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/zero_dim/basic_example/input[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/zero_dim/fixed_higher_prec/[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/zero_dim/fixed_higher_prec/input
+==> default: BertiniLinux64_v1.5/examples/zero_dim/regen/
+==> default: BertiniLinux64_v1.5/examples/zero_dim/regen/input
+==> default: BertiniLinux64_v1.5/examples/zero_dim/multi_homog/[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/zero_dim/multi_homog/input[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/zero_dim/user_homotopy/[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/zero_dim/user_homotopy/start[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/zero_dim/user_homotopy/input[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/pos_dim/[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/pos_dim/basic_pos_dim/[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/pos_dim/basic_pos_dim/input[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/pos_dim/membership/[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/pos_dim/membership/input[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/pos_dim/membership/member_points
+==> default: BertiniLinux64_v1.5/examples/pos_dim/membership/witness_data[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/pos_dim/sampling/
+==> default: BertiniLinux64_v1.5/examples/pos_dim/sampling/input[0m
+[1;32m==> default: BertiniLinux64_v1.5/examples/pos_dim/sampling/witness_data[0m
+[1;32m==> default: BertiniLinux64_v1.5/BertiniUsersManual.pdf[0m
+[1;32m==> default: BertiniLinux64_v1.5/bin/
+==> default: BertiniLinux64_v1.5/bin/bertini
+==> default: BertiniLinux64_v1.5/bin/bertini-serial[0m
+[1;32m==> default: BertiniLinux64_v1.5/LICENSES/
+==> default: BertiniLinux64_v1.5/LICENSES/Bertini_License
+==> default: BertiniLinux64_v1.5/LICENSES/GMP_MPFR_License
+==> default: BertiniLinux64_v1.5/README
+==> default: BertiniLinux64_v1.5/lib/
+==> default: BertiniLinux64_v1.5/lib/libbertini-serial.a[0m
+[1;32m==> default: BertiniLinux64_v1.5/lib/libbertini-serial.la
+==> default: BertiniLinux64_v1.5/include/
+==> default: BertiniLinux64_v1.5/include/eqbyeq.h
+==> default: BertiniLinux64_v1.5/include/pos_dim.h
+==> default: BertiniLinux64_v1.5/include/regeneration.h
+==> default: BertiniLinux64_v1.5/include/regen_pos_dim.h
+==> default: BertiniLinux64_v1.5/include/dimbydim.h
+==> default: BertiniLinux64_v1.5/include/cascade.h[0m
+[1;32m==> default: BertiniLinux64_v1.5/include/bertini.h[0m
+[1;32m==> default: BertiniLinux64_v1.5/include/parallel.h
+==> default: BertiniLinux64_v1.5/include/localdim.h
+==> default: BertiniLinux64_v1.5/include/diff.h
+==> default: BertiniLinux64_v1.5/include/ppParse.h[0m
+[1m==> default: Running provisioner: shell...[0m
+[0m    default: Running: inline script[0m
+[1;31m==> default: You are using pip version 7.1.0, however version 8.1.2 is available.
+==> default: You should consider upgrading via the 'pip install --upgrade pip' command.[0m
+[1;32m==> default: Collecting reprozip[0m
+[1;32m==> default:   Downloading reprozip-1.0.5.tar.gz (46kB)[0m
+[1;32m==> default: Collecting PyYAML (from reprozip)[0m
+[1;32m==> default:   Downloading PyYAML-3.11.zip (371kB)[0m
+[1;32m==> default: Collecting rpaths>=0.8 (from reprozip)[0m
+[1;32m==> default:   Downloading rpaths-0.12-py2.py3-none-any.whl[0m
+[1;32m==> default: Collecting usagestats>=0.3 (from reprozip)[0m
+[1;32m==> default:   Downloading usagestats-0.5-py2.py3-none-any.whl[0m
+[1;32m==> default: Collecting requests (from reprozip)[0m
+[1;32m==> default:   Downloading requests-2.10.0-py2.py3-none-any.whl (506kB)[0m
+[1;32m==> default: Installing collected packages: PyYAML, rpaths, requests, usagestats, reprozip[0m
+[1;32m==> default:   Running setup.py install for PyYAML[0m
+[1;32m==> default:   Running setup.py install for reprozip[0m
+[1;32m==> default: Successfully installed PyYAML-3.11 reprozip-1.0.5 requests-2.10.0 rpaths-0.12 usagestats-0.5[0m
+sh-3.2$ exit
+exit
+
+Script done on Sun May 15 15:32:18 2016
