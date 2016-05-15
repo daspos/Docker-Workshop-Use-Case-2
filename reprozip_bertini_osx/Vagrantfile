@@ -1,9 +1,10 @@
 #
 # Vagrantfile for a CentOS Linux Box with Reprozip and Bertini
 #
+#
 Vagrant.configure(2) do |config|
   
-  config.vm.box = "bento/centos-7.1"
+  config.vm.box = "centos/7"
   config.vm.hostname = "bertinivm"
 
   # Disable automatic box update checking. 
@@ -19,6 +20,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "shell", inline: "yum -y install epel-release"
   config.vm.provision "shell", inline: "yum -y install patch"
+  config.vm.provision "shell", inline: "yum -y install wget"
   config.vm.provision "shell", inline: "yum -y install gcc"
   config.vm.provision "shell", inline: "yum -y install sqlite"
   config.vm.provision "shell", inline: "yum -y install sqlite-devel"
@@ -26,9 +28,8 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: "yum -y install python"
   config.vm.provision "shell", inline: "yum -y install python-pip"
   config.vm.provision "shell", inline: "yum -y install python-devel"
-  config vm.provision "shell", inline: "cd /vagrant && wget https://bertini.nd.edu/BertiniLinux64_v1.5.tar.gz"
-  config vm.provision "shell", inline: "cd /vagrant && tar -xzvf BertiniLinux64_v1.5.tar.gz"
+  config.vm.provision "shell", inline: "wget https://bertini.nd.edu/BertiniLinux64_v1.5.tar.gz"
+  config.vm.provision "shell", inline: "tar --owner vagrant -xzvf BertiniLinux64_v1.5.tar.gz"
   config.vm.provision "shell", inline: "pip install reprozip"
-  config.vm.provision "shell", inline: "pip install reprounzip-docker reprounzip-vagrant reprounzip-vistrails"
 
 end
