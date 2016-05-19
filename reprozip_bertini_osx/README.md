@@ -1,4 +1,4 @@
-G# ReproZip Example Playable on Mac OS X#
+# ReproZip Example Playable on Mac OS X#
 
 This example includes a ReproZip Package created on a Mac OS X machine using a Linux Virtual Machine running under
 [Virtual Box](https://www.virtualbox.org/wiki/VirtualBox). It assumes you are comfortable using the command line,
