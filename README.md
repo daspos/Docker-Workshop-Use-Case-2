@@ -1,4 +1,4 @@
-#Readme for ReproZip: DASPOS Workshop#
+# Readme for ReproZip: DASPOS Workshop
 
 This is a repo for Breakout 2 ReproZip a session held at the DASPOS Workshop on Container Strategies for Data & Software Preservation.  More information about the workshop is available at: https://daspos.crc.nd.edu/index.php/workshops/container-strategies-for-data-software-preservation-that-promote-open-science
 
@@ -9,7 +9,7 @@ This github repository contains info, links, files for participating in the Repr
 
 The breakout sessions are related to the 5/19/2016  [ReproZip Workshop Talk](https://daspos.crc.nd.edu/index.php/14-daspos/workshops/55-workshop-7speak#vste)  presented by [Vicky Steeves and Rémi Rampin](https://daspos.crc.nd.edu/index.php/14-daspos/workshops/55-workshop-7speak#vste).
 
-## Technology Preview:ReproZip
+## Technology Preview: ReproZip
 
 ReproZip allows you to pack your experiment along with all necessary data files, libraries, environment variables and options.
 
