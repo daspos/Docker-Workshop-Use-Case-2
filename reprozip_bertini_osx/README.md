@@ -1,4 +1,4 @@
-# ReproZip Example Playable on Mac OS X#
+# ReproZip Example Playable on Mac OS X
 
 This example includes a ReproZip Package created on a Mac OS X machine using a Linux Virtual Machine running under
 [Virtual Box](https://www.virtualbox.org/wiki/VirtualBox). It assumes you are comfortable using the command line,
@@ -72,7 +72,7 @@ Output files:
 
  If you made it this far, and would like to try your hand at creating a ReproZip rpz, follow the instructions below.
 
-##Building a Linux VM Using Vagrant##
+## Building a Linux VM Using Vagrant
  You'll need a Linux VM where you can install your software and reprozip, then build the rpz. You should already have VirtualBox installed on your Mac for running such a VM . There is a tool, Vagrant, which helps with  building and installing VMs. Install the Mac
 version from here: 
 
@@ -95,7 +95,7 @@ Current machine states:
 default                   running (virtualbox)
 ```
 
-##Using Reprozip within the VM##
+## Using Reprozip within the VM
 
  Vagrant has a Secure Shell option to allow you to connect to your new VM- run the command ``vagrant ssh``. You will be connected as the *vagrant* user. Run the command ``ls``:
 
